@@ -35,14 +35,12 @@ docker compose build
 docker compose up -d
 ```
 
-Now our image is generated with project dependencies.
 ### Create SBOM with project and image dependencies (Since Docker Version 4.7.0)
-If we want to generate a SBOM which includes both, project and image dependencies, we can do that with 
-docker scout like this:
+Now that we have our project dependencies copied to the image, we can generate a SBOM which includes
+project and image dependensies. We can do this with "docker scout" like this:
 ```sh
 docker scout sbom sbom-docker-demo --format json --output sbom-docker-demo.sbom
 ```
-
 Print CVE´s with Docker scout
 ```sh
 docker scout cves sbom-docker-demo --output sbom-docker-demo-cves.txt
