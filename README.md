@@ -18,5 +18,9 @@ docker scout sbom sbom-docker-demo --format json --output sbom-docker-demo.sbom
 ```
 In SPDX-Format
 ```sh
-docker scout sbom sbom-docker-demo --format spdx
+docker scout sbom sbom-docker-demo --output spdx-json
+```
+Print CVE´s
+```sh
+docker scout cves sbom-docker-demo
 ```
