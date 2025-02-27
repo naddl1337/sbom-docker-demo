@@ -30,4 +30,6 @@ build/
 
 ### VS Code ###
 .vscode/
-/sbom-docker-demo.sbom
+
+# Generated artifacts
+sbom-docker-demo*.*
