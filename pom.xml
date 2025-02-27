@@ -28,6 +28,10 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
+		<!--
+		!!!! CRITICAL vulnerable dependency version for CVE testing !!!!
+		<jackson-bom.version>2.9.8</jackson-bom.version>
+		-->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -41,12 +45,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- !!!! CRITICAL vulnerable dependency for CVE testing !!!! -->
-<!--		<dependency>-->
-<!--			<groupId>com.fasterxml.jackson.core</groupId>-->
-<!--			<artifactId>jackson-databind</artifactId>-->
-<!--			<version>2.9.8</version>-->
-<!--		</dependency>-->
 	</dependencies>
 
 	<build>
